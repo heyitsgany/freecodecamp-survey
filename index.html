@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script>
+    <title>FCC: Survey Form</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="/logo.svg" alt="jupi logo" class="header__logo" id="logo" />
+      <h1 class="header__title" id="title">Customer Survey</h1>
+      <p class="header__description" id="description">
+        Thanks for taking the time to tell us how we can improve our services.
+        We really appreciate it!
+      </p>
+    </header>
+    <form id="survey-form" class="survey__form">
+      <label for="name" class="form__label" id="name-label">Name</label>
+      <input
+        type="text"
+        class="form__input"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+      <label for="email" class="form__label" id="email-label">Email</label>
+      <input
+        type="email"
+        class="form__input"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <label for="number" class="form__label" id="number-label">Age</label>
+      <input
+        type="number"
+        class="form__input"
+        name="number"
+        id="number"
+        placeholder="Enter your age (optional)"
+        min="0"
+        max="150"
+      />
+      <p class="form__label radio__question">
+        Would you recommend Jupi to a friend?
+      </p>
+      <label class="form__label radio__label"
+        ><input
+          type="radio"
+          class="radio__input"
+          name="recommend"
+          value="yes"
+        />
+        Yes, definitely</label
+      >
+      <label class="form__label radio__label"
+        ><input
+          type="radio"
+          class="radio__input"
+          name="recommend"
+          value="maybe"
+        />
+        Maybe</label
+      >
+      <label class="form__label radio__label"
+        ><input
+          type="radio"
+          class="radio__input"
+          name="recommend"
+          value="not sure"
+        />
+        Not Sure</label
+      >
+      <label class="form__label radio__label"
+        ><input type="radio" class="radio__input" name="recommend" value="no" />
+        No, definitely not</label
+      >
+      <label for="dropdown" class="form__label" id="dropdown-label"
+        >How did you hear about Jupi?</label
+      >
+      <select name="about" class="form__dropdown" id="dropdown">
+        <option value="search engine">Search Engine</option>
+        <option value="radio">Radio advertisement</option>
+        <option value="television">Television</option>
+        <option value="newspaper">Newspaper</option>
+        <option value="friend/family">Friend / Family Member</option>
+        <option value="other">Other</option>
+      </select>
+      <p class="form__label checkbox__question">
+        What would you like to see improved? <span>(Check all that apply)</span>
+      </p>
+      <label class="form__label checkbox__label"
+        ><input
+          type="checkbox"
+          class="checkbox__input"
+          name="improvement"
+          value="customer service"
+        />
+        Customer service</label
+      >
+      <label class="form__label checkbox__label"
+        ><input
+          type="checkbox"
+          class="checkbox__input"
+          name="improvement"
+          value="delivery options"
+        />
+        delivery options & times</label
+      >
+      <label class="form__label checkbox__label"
+        ><input
+          type="checkbox"
+          class="checkbox__input"
+          name="improvement"
+          value="product selection"
+        />
+        product selection</label
+      >
+      <label class="form__label checkbox__label"
+        ><input
+          type="checkbox"
+          class="checkbox__input"
+          name="improvement"
+          value="ordering process"
+        />
+        ordering process</label
+      >
+      <label class="form__label checkbox__label"
+        ><input
+          type="checkbox"
+          class="checkbox__input"
+          name="improvement"
+          value="social media"
+        />
+        social media</label
+      >
+      <label for="comments" class="form__label" id="comments-label"
+        >Any other comments or suggestions?</label
+      >
+      <textarea
+        name="comments"
+        id="comments"
+        placeholder="Please enter your comments here..."
+        class="form__textarea"
+      ></textarea>
+      <button type="submit" class="form__button" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
